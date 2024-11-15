@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Day of the Week -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day of the Week"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Day of the Week" />
+
+        <!-- Time of Course -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time of Course"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextTimeOfCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Time of Course" />
+
+        <!-- Capacity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capacity"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Capacity" />
+
+        <!-- Duration -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Duration" />
+
+        <!-- Price -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Price" />
+
+        <!-- Class Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Type"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/addclassTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/type_text">
+
+            <RadioButton
+                android:id="@+id/flow_yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flow Yoga" />
+
+            <RadioButton
+                android:id="@+id/aerial_yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aerial Yoga" />
+            <RadioButton
+                android:id="@+id/family_yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Yoga" />
+        </RadioGroup>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/addTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description" />
+
+
+
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Course" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
